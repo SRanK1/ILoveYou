@@ -14,7 +14,7 @@ body {
   height: 100vh;
   overflow: hidden;
   animation: fadeIn 2s ease-in-out;
-  perspective: 1000px; /* 🔥 profundidad real */
+  perspective: 1000px;
 }
 
 @keyframes fadeIn {
@@ -86,7 +86,7 @@ body {
   font-weight: bold;
 
   white-space: nowrap;
-  transform: translate(-50%, -50%) translateZ(10px); /* 🔥 profundidad */
+  transform: translate(-50%, -50%) translateZ(10px); 
   opacity: 0;
   animation: flow 6s linear infinite, colorShift 3s infinite alternate;
 }
@@ -154,7 +154,7 @@ function startExperience() {
   }, 100);
 }
 
-// ❤️ corazón
+// corazón
 const heart = document.getElementById("heart");
 
 let points = [];
@@ -182,7 +182,7 @@ points.forEach((p, index) => {
   heart.appendChild(el);
 });
 
-// ✨ partículas
+// partículas
 const canvas = document.getElementById("bg");
 const ctx = canvas.getContext("2d");
 
@@ -221,7 +221,7 @@ function animate() {
 
 animate();
 
-// 💖 corazones flotando
+// corazones flotando
 document.addEventListener("click", e => {
   const el = document.createElement("div");
   el.innerText = "💖";
@@ -243,7 +243,7 @@ document.addEventListener("click", e => {
   setTimeout(() => el.remove(), 1000);
 });
 
-// 🔥 PARALLAX 3D REAL
+// PARALLAX 3D 
 document.addEventListener("mousemove", e => {
   const x = (e.clientX / window.innerWidth - 0.5) * 20;
   const y = (e.clientY / window.innerHeight - 0.5) * 20;
